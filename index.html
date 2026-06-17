@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Abha & Udit Wardrobe Guidance</title>
+<meta name="description" content="Wedding weekend wardrobe guidance for Abha and Udit's events." />
+<link rel="icon" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" />
+<style>
+:root{--font-script:"Carattere",cursive;--font-display:"Cormorant Garamond",Georgia,serif;--font-body:"Libre Baskerville",Georgia,serif;}
+:root {
+  --forest: #2c683c;
+  --deep-forest: #173d29;
+  --pine: #254d36;
+  --copper: #9b643a;
+  --rust: #8c572e;
+  --burnt-copper: #724826;
+  --paper: #f3ead8;
+  --paper-warm: #eadcc4;
+  --paper-shadow: #d8c4a2;
+  --ribbed-paper-line: rgba(88, 65, 36, 0.05);
+  --ink: #2f2a21;
+  --base-text: #8f6430;
+  --copper-light: #ba5919;
+  --muted-ink: #685a45;
+  --soft-green: #d2d9cd;
+  --palette-forest: #2c683c;
+  --palette-carnival: #d94e78;
+  --palette-sunset: #d86a22;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--paper);
+  /* Stop the elastic overscroll from exposing a plain area past the page edges. */
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  color: var(--base-text);
+  font-family: var(--font-body), Georgia, serif;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--ribbed-paper-line) 0,
+      var(--ribbed-paper-line) 1px,
+      transparent 1px,
+      transparent 9px
+    ),
+    radial-gradient(circle at 20% 8%, rgba(255, 255, 255, 0.5), transparent 24rem),
+    radial-gradient(circle at 84% 12%, rgba(155, 100, 58, 0.12), transparent 20rem),
+    linear-gradient(180deg, #f8efde 0%, var(--paper) 46%, #efe1c8 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wardrobe-site {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.intro-page,
+.event-panel {
+  isolation: isolate;
+  position: relative;
+}
+
+.intro-page {
+  align-items: center;
+  display: grid;
+  gap: 1.8rem;
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1fr);
+  min-height: 100svh;
+  padding: 3rem max(1.2rem, calc((100vw - 1120px) / 2));
+}
+
+.barn-watercolor {
+  filter: drop-shadow(0 1.25rem 1.5rem rgba(47, 42, 33, 0.16));
+  margin-inline: auto;
+  width: min(35rem, 100%);
+}
+
+.intro-copy {
+  border-block: 1px solid rgba(155, 100, 58, 0.34);
+  padding: clamp(1.4rem, 3vw, 2.4rem) 0;
+  text-align: center;
+}
+
+h1,
+h2,
+.attire-vibe,
+.signature {
+  font-family: var(--font-script), cursive;
+  font-weight: 400;
+  line-height: 0.96;
+  margin: 0;
+}
+
+h1 {
+  color: var(--forest);
+  font-size: clamp(4.3rem, 11vw, 8rem);
+  margin-inline: auto;
+  max-width: 10ch;
+}
+
+.ornament {
+  background: linear-gradient(90deg, transparent, var(--copper), transparent);
+  height: 1px;
+  margin: 1.25rem auto 1.5rem;
+  width: min(22rem, 100%);
+}
+
+.intro-notes {
+  color: var(--base-text);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.48rem);
+  line-height: 1.5;
+  margin-inline: auto;
+  max-width: 35rem;
+}
+
+.intro-notes p {
+  margin: 0;
+}
+
+.intro-notes p + p {
+  margin-top: 1.1rem;
+}
+
+.signature {
+  color: var(--forest);
+  font-size: clamp(3.1rem, 6vw, 4.6rem);
+  margin-top: 1.4rem;
+}
+
+.event-gallery {
+  display: grid;
+  gap: 0;
+  padding: 0 max(0.85rem, calc((100vw - 1080px) / 2)) 4rem;
+}
+
+.event-panel {
+  --accent: var(--forest);
+  --accent-2: var(--copper);
+  --accent-3: var(--burnt-copper);
+  align-content: center;
+  display: grid;
+  gap: 1.1rem;
+  min-height: 100svh;
+  overflow: hidden;
+  padding: clamp(2rem, 4vw, 3.4rem) clamp(1.45rem, 3vw, 2.4rem);
+}
+
+/* Light divider between stacked sections. */
+.event-panel::before {
+  background: linear-gradient(90deg, transparent, rgba(155, 100, 58, 0.45), transparent);
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: min(58rem, 84%);
+}
+
+.event-panel.forest-gala {
+  --accent: #28433a;
+  --accent-2: #c26520;
+  --accent-3: #28433a;
+}
+
+.event-panel.carnival-garden {
+  --accent: #d94b6d;
+  --accent-2: #3685ad;
+  --accent-3: #755798;
+}
+
+.event-panel.sunset-ceremony {
+  --accent: #d0601e;
+  --accent-2: #d0601e;
+  --accent-3: #d0601e;
+}
+
+.event-heading {
+  text-align: center;
+}
+
+.event-heading h2 {
+  color: var(--accent);
+  font-size: clamp(4.2rem, 9.6vw, 7.8rem);
+}
+
+.event-label {
+  align-items: center;
+  color: var(--copper);
+  display: flex;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1rem, 2.1vw, 1.7rem);
+  font-weight: 600;
+  gap: 1rem;
+  justify-content: center;
+  letter-spacing: 0.2em;
+  margin: 0.5rem 0 0;
+}
+
+.event-label::before,
+.event-label::after {
+  background: var(--copper);
+  content: "";
+  height: 1px;
+  max-width: 7.5rem;
+  width: 14vw;
+}
+
+.event-datetime {
+  color: var(--copper-light);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 0.4rem 0 0;
+}
+
+.event-stage {
+  margin: -1.6rem auto -0.4rem;
+  max-width: min(44rem, 100%);
+  position: relative;
+  width: 100%;
+}
+
+/* The full cutout is in flow and sizes the stage (a smaller watercolor backdrop). */
+.stage-cutout {
+  filter: saturate(1.03);
+  opacity: 0.96;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Figures kept at their original size, positioned to stand on the ground. */
+.stage-figures {
+  bottom: 7%;
+  filter: drop-shadow(0 1rem 0.9rem rgba(47, 42, 33, 0.16));
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: min(42rem, 100%);
+  z-index: 2;
+}
+
+/* The sunset meadow sits higher in its (taller) frame, so lift the figures onto it. */
+.event-panel.sunset-ceremony .stage-figures {
+  bottom: 15%;
+}
+
+/* A touch more breathing room below these two labels, nudging the artwork down. */
+.event-panel.forest-gala .event-stage,
+.event-panel.carnival-garden .event-stage {
+  margin-top: -0.8rem;
+}
+
+/* A bit more space before the last word of these script lines. */
+.event-panel.forest-gala .event-heading h2 > span:nth-child(4),
+.event-panel.sunset-ceremony .attire-vibe > span:nth-child(2) {
+  margin-left: 0.12em;
+}
+
+/* Pull the ceremony vibe up under the lifted figures, layered above the artwork. */
+.event-panel.sunset-ceremony .attire-vibe {
+  margin-top: -3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.attire-vibe {
+  color: var(--accent);
+  font-size: clamp(4rem, 9vw, 7.1rem);
+  line-height: 0.8;
+  text-align: center;
+}
+
+.vibe-accent-2 {
+  color: var(--accent-2);
+}
+
+.vibe-accent-3 {
+  color: var(--accent-3);
+}
+
+/* Carnival swaps its first two words: "Colorful" in blue, "Summer" in pink. */
+.event-panel.carnival-garden .attire-vibe > span:nth-child(1) {
+  color: var(--accent-2);
+}
+
+.event-panel.carnival-garden .attire-vibe > span:nth-child(2) {
+  color: var(--accent);
+}
+
+.attire-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 45rem;
+  text-align: center;
+  width: 100%;
+}
+
+.attire-grid > div + div {
+  border-left: 1px solid rgba(155, 100, 58, 0.35);
+}
+
+.attire-grid h3 {
+  color: var(--base-text);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.attire-grid p {
+  color: var(--base-text);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.35;
+  margin: 0.75rem auto 0;
+  max-width: 16rem;
+}
+
+.event-footer {
+  margin: 0 auto;
+  max-width: 48rem;
+  text-align: center;
+}
+
+.event-notes {
+  color: var(--copper-light);
+  font-family: var(--font-body), Georgia, serif;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .intro-page {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .intro-copy {
+    margin-inline: auto;
+    max-width: 36rem;
+  }
+
+  .event-panel {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .intro-page {
+    padding: 2.1rem 1rem 2.8rem;
+  }
+
+  .event-gallery {
+    padding: 0 0.72rem 2rem;
+  }
+
+  .event-panel {
+    gap: 0.85rem;
+    padding: 1.25rem 0.85rem;
+  }
+
+  .event-label {
+    letter-spacing: 0.1em;
+  }
+
+  .event-label::before,
+  .event-label::after {
+    width: 10vw;
+  }
+
+  .attire-grid {
+    gap: 0.9rem;
+  }
+
+  .attire-grid h3 {
+    font-size: 1.45rem;
+  }
+
+  .attire-grid p {
+    font-size: 0.92rem;
+  }
+}
+
+</style>
+</head>
+<body>
+<main class="wardrobe-site"><section class="intro-page" aria-labelledby="wardrobe-title"><img src="design-assets/artwork/barn-watercolor.png" alt="" class="barn-watercolor"/><div class="intro-copy"><h1 id="wardrobe-title">Wardrobe Guidance</h1><div class="ornament" aria-hidden="true"></div><div class="intro-notes"><p>We created this as inspiration, not as a shopping list. The weekend includes a full schedule of sun, heat, grass, games, and dancing, with limited time between events.</p><p>More than anything, we care that you feel comfortable, stay safe, and are there with us on time. Your presence to enjoy with us matters far more than any specific outfit.</p></div><p class="signature">Abha &amp; Udit</p></div></section><section class="event-gallery" aria-label="Wardrobe events"><article class="event-panel sunset-ceremony"><header class="event-heading"><h2><span>Sunset</span><span> <!-- -->Shaadi</span></h2><p class="event-label">CEREMONY</p><p class="event-datetime">Saturday, September 5, 2026 · 4:00 PM</p></header><div class="event-stage"><img src="design-assets/artwork/wedding-sunset-meadow-cutout.png" alt="" class="stage-cutout"/><img src="design-assets/artwork/shaadi_attire_figures.png" alt="" class="stage-figures"/></div><p class="attire-vibe"><span>Traditional</span><span class="vibe-accent-2"> <!-- -->Elegance</span></p><div class="attire-grid"><div><h3>Ethnic</h3><p>Classic Ethnics</p></div><div><h3>Western</h3><p>Summer Cocktail Attire</p></div></div><footer class="event-footer"><p class="event-notes">Dinner will be at dusk, so light layers could help ward off the evening chill.</p></footer></article><article class="event-panel carnival-garden"><header class="event-heading"><h2><span>From</span><span> <!-- -->Carnegie</span><span> <!-- -->to</span><span> <!-- -->Carnation</span></h2><p class="event-label">BARAAT &amp; CARNIVAL</p><p class="event-datetime">Sunday, September 6, 2026 · 10:00 AM</p></header><div class="event-stage"><img src="design-assets/artwork/wedding-carnival-garden-cutout.png" alt="" class="stage-cutout"/><img src="design-assets/artwork/carnival_attire_figures.png" alt="" class="stage-figures"/></div><p class="attire-vibe"><span>Colorful</span><span class="vibe-accent-2"> <!-- -->Summer</span><span class="vibe-accent-3"> <!-- -->Garden</span></p><div class="attire-grid"><div><h3>Ethnic</h3><p>Indian Wedding Casual</p></div><div><h3>Western</h3><p>Summer Dressy Casual</p></div></div><footer class="event-footer"><p class="event-notes">Dress for the sun and lawn games. Abha is skipping the heels, and you can too!</p></footer></article><article class="event-panel forest-gala"><header class="event-heading"><h2><span>Naach</span><span> <!-- -->the</span><span> <!-- -->Night</span><span> <!-- -->Away</span></h2><p class="event-label">SANGEET RECEPTION</p><p class="event-datetime">Sunday, September 6, 2026 · 5:00 PM</p></header><div class="event-stage"><img src="design-assets/artwork/wedding-lanterns-forest-cutout.png" alt="" class="stage-cutout"/><img src="design-assets/artwork/reception_attire_figures.png" alt="" class="stage-figures"/></div><p class="attire-vibe"><span>Glitz</span><span class="vibe-accent-2"> <!-- -->and</span><span class="vibe-accent-3"> <!-- -->Glamour</span></p><div class="attire-grid"><div><h3>Ethnic</h3><p>Formal Evening Ethnics or Indo-Westerns</p></div><div><h3>Western</h3><p>Creative Cocktail Attire</p></div></div><footer class="event-footer"><p class="event-notes">Indoor dinner and then be ready to dance!</p></footer></article></section></main>
+</body>
+</html>
